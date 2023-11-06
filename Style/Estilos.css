@@ -1,0 +1,146 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header" 
+    "main article"
+    "main article"
+    "footer footer";
+
+
+}
+
+.header {
+    background-image: linear-gradient(to bottom, #5c0c0c, #D83F31);
+    grid-area: header;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.imagenHeader{
+    width: 150px;
+    height: 150px;
+    margin: 55px 35px 35px 35px ;
+
+}
+
+
+div{
+    width: 100%;
+
+}
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+li {
+    padding: 30px;
+    border: 10px;
+    color: white;
+}
+
+.main {
+    border-style: solid 50px;
+    background-image: linear-gradient(to bottom, #E55604, #D83F31);
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+
+}
+    
+
+.titulo {
+    font-family: 'Dela Gothic One', sans-serif;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 55px 35px 35px 35px ;
+    
+}
+
+.lorem {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-weight: 15px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 55px 35px 35px 35px ;
+}
+   
+
+.button {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+
+}
+
+    
+
+
+.article{
+    background-image: linear-gradient(to bottom, #E55604, #D83F31);
+    width: 100%;
+    height: 100%;
+    grid-area: article;
+    
+}
+
+.papas {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-top: 150px;
+    margin-right: -150px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    z-index: 2;
+}
+
+.pollo {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 180px;
+    margin-left: 100px;
+
+}
+
+
+.footer {
+    background-image: linear-gradient(to bottom, #5c0c0c, #D83F31);
+    width: 100%;
+    height: 100%;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logos {
+    width: 115px;
+    height: 115px;
+    margin: 55px 35px 35px 35px ;
+}
